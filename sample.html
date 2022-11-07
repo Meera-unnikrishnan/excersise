@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample</title>
+    <style>
+        .container{
+            border: 20px;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* opacity: 0.1; */
+        }
+        .bg-container{
+            background-color: rgb(197, 202, 207);
+            height: 60vh;
+            width: 30vw;
+            /* display: flex;
+            justify-content: center; */
+            /* opacity: 0.2; */
+        }
+
+
+        .red-container{
+            height: 30vh;
+            width: 15vw;
+            background-color: red;
+            margin-left: 20px;
+            margin-top: 20px;
+            
+        }
+        .blue-container{
+            height: 30vh;
+            width: 15vw;
+            background-color: blue;
+            margin-left: 40px;
+            margin-top:-90px;
+            margin-left: 120px;
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bg-container">
+            <div class="red-container" onclick="this.style.backgroundColor = 'blue';">
+            </div>
+            <div class="blue-container" onclick="this.style.backgroundColor = 'red';">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
